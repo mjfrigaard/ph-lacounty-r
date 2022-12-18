@@ -1547,7 +1547,7 @@ background-size: 8%
 
 .font80[
 
-**1. `basic/` shiny app**
+**1. [`basic/` shiny app](https://github.com/mjfrigaard/ph-lacounty-r/tree/main/shiny/cloud/basic)**
 
 This basic shiny app gives an overview of the `fluidPage()` layout functions, inputs, outputs, and reactives.
 
@@ -1588,7 +1588,7 @@ This folder contains another version of `My App`, but without the reactive expre
 
 .font80[
 
-**3. `tables/` shiny app**
+**3. [`tables/` shiny app](https://github.com/mjfrigaard/ph-lacounty-r/tree/main/shiny/cloud/tables)**
 
 The `tables` shiny app gives an overview of various table outputs in shiny (also shows how to use the `shiny::observeEvent()` function)
 
@@ -1604,7 +1604,7 @@ The `tables` shiny app gives an overview of various table outputs in shiny (also
 ]
 
 
-**4. `graphs/` shiny app**
+**4. [`graphs/` shiny app](https://github.com/mjfrigaard/ph-lacounty-r/tree/main/shiny/cloud/graphs)**
 
 This application shows how write plotting functions for shiny apps (using `rlang` and other meta-programming methods).
 
@@ -1634,7 +1634,7 @@ background-size: 8%
 
 .font80[
 
-**5. `reactlog/` shiny app**
+**5. [`reactlog/` shiny app](https://github.com/mjfrigaard/ph-lacounty-r/tree/main/shiny/cloud/reactlog/)**
 
 Open the `reactlog.R` file.
 
@@ -1671,7 +1671,7 @@ Follow the instructions in `reactlog.R` to use the `reactlog` package.
 
 .font80[
 
-**6. `gtrends/` shiny app**
+**6. [`gtrends/` shiny app](https://github.com/mjfrigaard/ph-lacounty-r/tree/main/shiny/cloud/gtrends)**
 
 This application creates an application using the `gtrendsR` package.
 
@@ -1702,7 +1702,7 @@ The application loads two datasets in `data/`
 
 These data were accessed on 2022-12-15.
 
-**7. `navbar/` shiny app**
+**7. [`navbar/` shiny app](https://github.com/mjfrigaard/ph-lacounty-r/tree/main/shiny/cloud/navbar)**
 
 The navbar app contains the `navbarPage()` functions
 
