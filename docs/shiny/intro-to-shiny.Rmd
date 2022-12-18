@@ -1606,7 +1606,7 @@ The `tables` shiny app gives an overview of various table outputs in shiny (also
 
 **4. `graphs/` shiny app**
 
-This application shows how write plotting functions for shiny apps (using `rlang` and other meta-programming methods.
+This application shows how write plotting functions for shiny apps (using `rlang` and other meta-programming methods).
 
 .code70[
 

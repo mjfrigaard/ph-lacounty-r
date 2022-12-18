@@ -1,0 +1,43 @@
+location,hits,keyword,geo,gprop
+Palm Springs CA,100,COVID,US-CA,web
+Medford-Klamath Falls OR,100,COVID,US-CA,web
+Monterey-Salinas CA,97,COVID,US-CA,web
+Eureka CA,95,COVID,US-CA,web
+Sacramento-Stockton-Modesto CA,93,COVID,US-CA,web
+Yuma AZ-El Centro CA,92,COVID,US-CA,web
+Reno NV,90,COVID,US-CA,web
+San Diego CA,90,COVID,US-CA,web
+Chico-Redding CA,88,COVID,US-CA,web
+Santa Barbara-Santa Maria-San Luis Obispo CA,86,COVID,US-CA,web
+Los Angeles CA,80,COVID,US-CA,web
+Fresno-Visalia CA,76,COVID,US-CA,web
+San Francisco-Oakland-San Jose CA,72,COVID,US-CA,web
+Bakersfield CA,72,COVID,US-CA,web
+Medford-Klamath Falls OR,100,Unemployment,US-CA,web
+Reno NV,70,Unemployment,US-CA,web
+Yuma AZ-El Centro CA,63,Unemployment,US-CA,web
+Bakersfield CA,47,Unemployment,US-CA,web
+Chico-Redding CA,43,Unemployment,US-CA,web
+Palm Springs CA,42,Unemployment,US-CA,web
+Fresno-Visalia CA,41,Unemployment,US-CA,web
+Eureka CA,37,Unemployment,US-CA,web
+Sacramento-Stockton-Modesto CA,34,Unemployment,US-CA,web
+Los Angeles CA,31,Unemployment,US-CA,web
+Monterey-Salinas CA,30,Unemployment,US-CA,web
+San Diego CA,30,Unemployment,US-CA,web
+Santa Barbara-Santa Maria-San Luis Obispo CA,28,Unemployment,US-CA,web
+San Francisco-Oakland-San Jose CA,21,Unemployment,US-CA,web
+Santa Barbara-Santa Maria-San Luis Obispo CA,100,Inflation,US-CA,web
+Monterey-Salinas CA,89,Inflation,US-CA,web
+Sacramento-Stockton-Modesto CA,86,Inflation,US-CA,web
+San Diego CA,81,Inflation,US-CA,web
+Los Angeles CA,80,Inflation,US-CA,web
+San Francisco-Oakland-San Jose CA,79,Inflation,US-CA,web
+Eureka CA,78,Inflation,US-CA,web
+Chico-Redding CA,73,Inflation,US-CA,web
+Fresno-Visalia CA,72,Inflation,US-CA,web
+Reno NV,70,Inflation,US-CA,web
+Yuma AZ-El Centro CA,67,Inflation,US-CA,web
+Medford-Klamath Falls OR,66,Inflation,US-CA,web
+Bakersfield CA,65,Inflation,US-CA,web
+Palm Springs CA,64,Inflation,US-CA,web

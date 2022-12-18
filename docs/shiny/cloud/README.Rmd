@@ -1,0 +1,96 @@
+---
+title: "Intro to shiny"
+output: 
+  html_document: 
+    toc: yes
+    toc_depth: 4
+    toc_float: true
+    highlight: tango
+    theme: flatly
+    df_print: paged
+    self_contained: true
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+fs::dir_create("www")
+knitr::opts_chunk$set(
+    echo = TRUE,
+    fig.path = "www")
+```
+
+This document outlines the applications in the posit.cloud workspace for the LA County Department of Public Health shiny training.
+
+## 1. `basic/` shiny app
+
+This basic shiny app gives an overview of the `fluidPage()` layout functions, inputs, outputs, and reactives.
+
+```{r basic, echo=FALSE}
+fs::dir_tree("basic")
+```
+
+The `basic.R` file contains an empty application, solution.R contains the worked solution from the slides (`intro-to-shiny.pdf`)
+
+## 2. `sidebar/` app
+
+```{r sidebar, echo=FALSE}
+fs::dir_tree("sidebar")
+```
+
+This folder contains another version of `My App`, but without the reactive expression.
+
+## 3. `tables/` shiny app
+
+The `tables` shiny app gives an overview of various table outputs in shiny (also shows how to use the `shiny::observeEvent()` function)
+
+```{r tables, echo=FALSE}
+fs::dir_tree("tables")
+```
+
+## 4. `graphs/` shiny app
+
+This application shows how write plotting functions for shiny apps (using `rlang` and other meta-programming methods.
+
+```{r graphs, echo=FALSE}
+fs::dir_tree("graphs")
+```
+
+## 5. `reactlog/` shiny app
+
+Open the `reactlog.R` file.
+
+```{r reactlog-no-recurse, echo=FALSE}
+fs::dir_tree("reactlog/", recurse = FALSE)
+```
+
+Inside the `reactlog/` folder there are two apps: `reactives/reactive.R` and `reactives/nonreactive.R`.
+
+```{r reactlog-apps, echo=FALSE}
+fs::dir_tree("reactlog/reactives/")
+```
+
+Follow the instructions in `reactlog.R` to use the `reactlog` package.
+
+## 6. `gtrends/` shiny app
+
+This application creates an application using the `gtrendsR` package.
+
+```{r gtrends, echo=FALSE}
+fs::dir_tree("gtrends/")
+```
+
+The application loads two datasets in `data/`
+
+```{r gtrends-data, echo=FALSE}
+fs::dir_tree("gtrends/data")
+```
+
+These data were scraped on 2022-12-15.
+
+## 7. `navbar/` shiny app
+
+The navbar app contains the `navbarPage()` functions
+
+```{r navbar-page, echo=FALSE}
+fs::dir_tree("navbar/")
+```
