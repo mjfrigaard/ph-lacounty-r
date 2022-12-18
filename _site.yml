@@ -1,0 +1,25 @@
+name: "my-website"
+output_dir: "docs"
+navbar:
+  title: "LACDPH: R Trainings"
+  type: inverse
+  left:
+    - text: "Training Materials"
+      href: index.html
+      menu:
+        - text: "Intro"
+        - text: "Importing Data"
+          href: slides/import.html
+        - text: "Common Data Objects"
+          href: slides/objects.html
+        - text: "R Markdown"
+        - text: "Intro to R Markdown"
+          href: slides/rmarkdown.html
+        - text: "R Markdown Tables"
+          href: slides/tables.html
+        - text: "R Markdown Graphs"
+          href: slides/visualizations.html
+        - text: "Shiny"
+        - text: "Intro to Shiny"
+          href: shiny/intro-to-shiny.html
+          

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Training Materials</title>
+
+<script src="site_libs/header-attrs-2.18/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">LACDPH: R Trainings</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Training Materials
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-header">Intro</li>
+    <li>
+      <a href="slides/import.html">Importing Data</a>
+    </li>
+    <li>
+      <a href="slides/objects.html">Common Data Objects</a>
+    </li>
+    <li class="dropdown-header">R Markdown</li>
+    <li>
+      <a href="slides/rmarkdown.html">Intro to R Markdown</a>
+    </li>
+    <li>
+      <a href="slides/tables.html">R Markdown Tables</a>
+    </li>
+    <li>
+      <a href="slides/visualizations.html">R Markdown Graphs</a>
+    </li>
+    <li class="dropdown-header">Shiny</li>
+    <li>
+      <a href="shiny/intro-to-shiny.html">Intro to Shiny</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Training Materials</h1>
+
+</div>
+
+
+<style type="text/css">
+.title {
+  display: none;
+}
+
+#getting-started img {
+  margin-right: 10px;
+}
+
+</style>
+<div class="row" style="padding-top: 30px;">
+<div class="col-sm-6">
+<p>The Posit.Cloud workspace is available <a
+href="https://posit.cloud/spaces/313764/content/all">here</a>.</p>
+<div id="data-management-r-markdown-shiny" class="section level1">
+<h1><strong>Data Management, R Markdown &amp; Shiny</strong></h1>
+<p>This training is delivered in two-parts: <strong>Data Management
+&amp; R Markdown</strong>, and an introduction to <strong>Shiny
+apps</strong>.</p>
+<div id="data-management-r-markdown" class="section level2">
+<h2>Data Management &amp; R Markdown</h2>
+<p><strong>Data Management &amp; R Markdown</strong> covers an
+introduction to data management in RStudio, common data objects in R,
+the basics of Markdown and <code>knitr</code>, table outputs
+(<code>tibble</code>, <code>kable</code> and <code>gtsummary</code>),
+graphics (<code>ggplot2</code>). The materials also cover importing and
+caching data, and rendering M Markdown files into various outputs.</p>
+<p><strong>Shiny</strong> covers an introduction to UI layouts,
+reactivity (inputs, expressions, and outputs), and deployment.
+Additional example applications are available on the <a
+href="https://posit.cloud/spaces/313764/content/5121916">Posit.Cloud
+project</a>.</p>
+<div id="importing-data" class="section level3">
+<h3>Importing Data</h3>
+<ul>
+<li><p>Using the IDE</p></li>
+<li><p>Importing SAS files</p></li>
+<li><p>Importing multiple files</p></li>
+<li><p>Using parameters</p></li>
+</ul>
+</div>
+<div id="common-data-objects" class="section level3">
+<h3>Common Data Objects</h3>
+<ul>
+<li><p>Atomic vectors</p></li>
+<li><p>S3 vectors</p></li>
+<li><p>Lists</p></li>
+<li><p><code>data.frame</code>s and <code>tibble</code>s</p></li>
+</ul>
+</div>
+<div id="r-markdown-anatomy" class="section level3">
+<h3>R Markdown Anatomy</h3>
+<ul>
+<li><p>Why use R Markdown?</p></li>
+<li><p>Metadata (<code>YAML</code>)</p></li>
+<li><p>Text (human readable)</p></li>
+<li><p>Code (machine readable)</p></li>
+</ul>
+</div>
+<div id="r-markdown-tables" class="section level3">
+<h3>R Markdown Tables</h3>
+<ul>
+<li><p>Standard static outputs (<code>tibble</code> &amp;
+<code>kable</code>)</p></li>
+<li><p>Interactive tables (<code>paged</code>)</p></li>
+<li><p>Table packages (<code>gtsummary</code>)</p></li>
+</ul>
+</div>
+<div id="r-markdown-graphs" class="section level3">
+<h3>R Markdown Graphs</h3>
+<ul>
+<li><p>Introduction to <code>ggplot2</code></p></li>
+<li><p>Layers (data, aesthetics, and geoms)</p></li>
+<li><p>Global vs. local mapping</p></li>
+<li><p>Setting vs. mapping aesthetics</p></li>
+<li><p>Facets</p></li>
+</ul>
+</div>
+</div>
+<div id="shiny-apps" class="section level2">
+<h2><strong>Shiny Apps</strong></h2>
+<div id="shiny-app-anatomy" class="section level3">
+<h3>Shiny app anatomy</h3>
+<ul>
+<li><p>ui</p></li>
+<li><p>server</p></li>
+<li><p>run</p></li>
+</ul>
+</div>
+<div id="user-interface-ui" class="section level3">
+<h3>User Interface (UI)</h3>
+<ul>
+<li><p>Layout</p></li>
+<li><p>Reactivity</p></li>
+<li><p>UI inputs &amp; outputs</p></li>
+</ul>
+</div>
+<div id="server" class="section level3">
+<h3>Server</h3>
+<ul>
+<li><p>Accessing inputs &amp; outputs</p></li>
+<li><p><code>render*_()</code> functions</p></li>
+<li><p>Reactive expressions</p></li>
+</ul>
+<!--
+R Markdown is an authoring format that enables easy creation of dynamic documents, presentations, and reports from R. It combines the core syntax of [markdown](https://daringfireball.net/projects/markdown/) (an easy to write plain text format) with embedded R code chunks that are run so their output can be included in the final document. 
+
+R Markdown documents are fully reproducible (they can be automatically regenerated whenever underlying R code or data changes).
+
+R Markdown has many available output formats including [HTML](http://rmarkdown.rstudio.com/html_document_format.html), [PDF](http://rmarkdown.rstudio.com/pdf_document_format.html), [MS Word](http://rmarkdown.rstudio.com/word_document_format.html), [Beamer](http://rmarkdown.rstudio.com/beamer_presentation_format.html), [HTML5 slides](http://rmarkdown.rstudio.com/ioslides_presentation_format.html), [Tufte handouts](http://rmarkdown.rstudio.com/tufte_handout_format.html), [books](https://bookdown.org), [dashboards](http://rmarkdown.rstudio.com/flexdashboard/), and [websites](http://rmarkdown.rstudio.com/rmarkdown_websites.html).
+
+-->
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-6">
+
+<p><img src="images/RMarkdownOutputFormats.png" /></p>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
